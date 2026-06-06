@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #f360a4fb;
+    --primary-hover-color: #f061b4;
+    --danger: #e74c3c;
+    --success: #ecf8f1;
+    --bg: rgb(255, 137, 229);
+    --card-bg: #db095a;
+    --text-color: #faf6f6;
+    --muted: #f7eaf0;
+    --border: #e5e5e5;
+}
+#page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(100, 1, 14);
+    font-size: 2rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text-color);
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+#summary {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+#summary span {
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+#form-section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#form-section h2 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
+}
+
+input ,
+select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-hover-color);
+    box-shadow: 0 0 0 2px rgba(109, 174, 218, 0.2);
+}
+
+.error {
+    color: var(--danger);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#add-btn {
+    margin-top: 1.25rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#add-btn:hover {
+    background-color: var(--primary-hover-color);
+}
+
+#list-section {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+#list-section h2 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+#habits-ul {
+    background: #cf0754;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+#habits-ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+}
+#habits-ul li:last-child {
+    border-bottom: none;
+}
+.habit-name {
+    font-weight: bold;
+    font-size: 1rem;
+    flex: 1;
+}
+.habit-category {
+    font-size: 0.75rem;
+    color: var(--muted);
+    background-color: var(--bg);
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+}
+.streak {
+    font-size: 0.85rem;
+    color: var(--success);
+    font-weight: bold;
+}
+
+li.completed .habit-name {
+    text-decoration: line-through;
+    opacity: 0.45;
+}
+
+.delete-btn {
+    padding: 0.3rem 0.7rem;
+    background-color: var(--danger);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.delete-btn:hover {
+    opacity: 0.8;
+}

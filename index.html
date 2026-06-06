@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+</head>
+<body>
+    <h1 id= "page-title">My Habit Tracker</h1>
+    
+    <div id="summary">
+        <span id="total-habits">Total Habits: 0</span>
+        <span id="done-today">Done Today: 0</span>
+        <span id="completion-pct"> 0%</span>
+    </div>
+    
+    <div id="form-section">
+        <h2>Add New Habit</h2>
+        
+        <label for="habit-name">Habit Name:</label>
+        <input type="text" id="habit-name" placeholder="e.g Read a book">
+
+        <label for="target-days">Target Days:</label>
+        <input type="number" id="target-days" placeholder="Days per week"> 
+
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="Health">Health</option>
+            <option value="Productivity">Productivity</option>
+            <option value="Leisure">Leisure</option>
+        </select>
+
+        <p id="error-message" class="error hidden"></p>
+        
+        <button id="add-btn">Add Habit</button>
+        
+    </div>
+
+    <div id="habits-list">
+        <h2>Your Habits</h2>
+        <ul id="habits-ul"></ul>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
