@@ -23,7 +23,7 @@ habit-tracker/
 
 Built With
 
-– HTML5 - semantic structure and accessible form elements
+- HTML5 - semantic structure and accessible form elements
 - CSS - custom properties, flexbox layout, responsive card design
 - JavaScript - DOM manipulation, event listeners, array methods
 
